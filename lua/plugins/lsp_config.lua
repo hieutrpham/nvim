@@ -121,7 +121,7 @@ return {
         tailwindcss = {},
         html = {},
         cssls = {},
-
+        clangd = {},
         lua_ls = {
           settings = {
             Lua = {
