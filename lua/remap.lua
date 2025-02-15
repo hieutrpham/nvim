@@ -26,7 +26,7 @@ vim.keymap.set({ 'n', 'v' }, '<leader>d', '"_d')
 
 vim.keymap.set('n', '<leader>e', [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
-vim.keymap.set('n', '<leader>pv', vim.cmd.Ex)
+vim.keymap.set('n', '<leader>pv', '<CMD>Oil<CR>')
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = false
 
