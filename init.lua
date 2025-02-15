@@ -13,8 +13,8 @@ vim.opt.rtp:prepend(lazypath)
 require('lazy').setup({
   'tpope/vim-sleuth',
   require 'plugins.harpoon',
-  require 'plugins.gitsigns',
-
+  require 'kickstart.plugins.gitsigns',
+  require 'plugins.fugitive',
   require 'plugins.whichkey',
 
   require 'plugins.telescope',
