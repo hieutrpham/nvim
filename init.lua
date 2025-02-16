@@ -22,9 +22,11 @@ require('lazy').setup({
 
   require 'plugins.lsp_config',
   require 'plugins.treesitter',
+  require 'plugins.treesitter-context',
   require 'plugins.theme',
   require 'plugins.autoformat',
   require 'plugins.autocomplete',
+  -- include mini.ai mini.surround
   require 'plugins.mini',
   require 'kickstart.plugins.autopairs',
 }, {
