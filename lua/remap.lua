@@ -41,12 +41,20 @@ vim.opt.number = true
 -- You can also add relative line numbers, to help with jumping.
 --  Experiment for yourself to see if you like it!
 vim.opt.relativenumber = true
-
 -- Enable mouse mode, can be useful for resizing splits for example!
 vim.opt.mouse = 'a'
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.incsearch = true
+vim.api.nvim_create_autocmd('FileType', {
+  pattern = 'c',
+  callback = function()
+    vim.opt_local.tabstop = 4
+    vim.opt_local.shiftwidth = 4
+    vim.opt_local.softtabstop = 4
+    vim.opt_local.expandtab = true -- Ensures spaces instead of tabs
+  end,
+})
 
 -- Don't show the mode, since it's already in the status line
 vim.opt.showmode = false

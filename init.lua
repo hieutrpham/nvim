@@ -28,6 +28,7 @@ require('lazy').setup({
   require 'kickstart.plugins.autopairs',
   require 'plugins.vim_tmux',
   require 'plugins.undotree',
+  require 'plugins.noice',
 }, {
   ui = {
     -- If you are using a Nerd Font: set icons to an empty table which will use the
