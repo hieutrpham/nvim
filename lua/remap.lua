@@ -27,7 +27,9 @@ vim.keymap.set({ 'n', 'v' }, '<leader>d', '"_d')
 
 vim.keymap.set('n', '<leader>e', [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], { desc = 'Quick Replace' })
 
-vim.keymap.set('n', '<leader>pv', '<CMD>Oil<CR>')
+vim.keymap.set('n', '<leader>pv', function()
+  MiniFiles.open()
+end, { noremap = true, silent = true })
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = true
 

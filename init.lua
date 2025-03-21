@@ -17,7 +17,7 @@ require('lazy').setup({
   require 'plugins.fugitive',
   require 'plugins.whichkey',
   require 'plugins.telescope',
-  require 'plugins.oil',
+  -- require 'plugins.oil',
   require 'plugins.lsp_config',
   require 'plugins.treesitter',
   require 'plugins.treesitter-context',
@@ -29,6 +29,7 @@ require('lazy').setup({
   require 'plugins.vim_tmux',
   require 'plugins.undotree',
   require 'plugins.noice',
+  require 'plugins.neotree',
 }, {
   ui = {
     -- If you are using a Nerd Font: set icons to an empty table which will use the
